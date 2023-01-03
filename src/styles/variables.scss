@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+$body-font: 'Poppins', sans-serif;
+
+// Fonts
+$big-font: 3.5rem;
+$h1-font: 2.25rem;
+$h2-font: 1.5rem;
+$h3-font: 1.25rem;
+$normal-font: 1rem;
+$small-font: 0.875rem;
+$smaller-font: 0.813rem;
+$tiny-font: 0.625rem;
+
+// Margins
+$m1: 4px;
+$m2: 8px;
+$m3: 12px;
+$m4: 16px;
+$m6: 24px;
+$m8: 32px;
+$m10: 40px;
+$m12: 48px;
+
+// z-index
+$z-tooltip: 10;
+$z-fixed1: 100;
+$z-modal: 1000;
+
+@media screen and (max-width: 992px) {
+  $big-font: 2.75rem;
+  $h1-font: 1.5rem;
+  $h2-font: 1.25rem;
+  $h3-font: 1rem;
+  $normal-font: 0.938rem;
+  $small-font: 0.813rem;
+  $smaller-font: 0.75rem;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: $body-font;
+  font-size: $normal-font;
+}
