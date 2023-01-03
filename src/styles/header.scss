@@ -1,0 +1,133 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $body;
+
+  &__nav {
+    height: calc($header-height + 24px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+
+    &-logo,
+    &-toggle {
+      color: $title;
+      font-weight: 500;
+    }
+
+    &-list {
+      display: flex;
+      column-gap: 32px;
+    }
+
+    &-close,
+    &-toggle {
+      display: none;
+    }
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: $small-font;
+      color: $title;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &-icon,
+    &-close,
+    &-toggle {
+      display: none !important;
+    }
+
+    &-link:hover,
+    .active-link {
+      color: $title-dark;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__nav {
+      height: $header-height;
+
+      &-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background-color: $body;
+        padding: 64px 24px 32px;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 0 0 24px 24px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &-showMenu {
+        position: fixed;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        background-color: $body;
+        padding: 64px 24px 32px;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 0 0 24px 24px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+      }
+
+      &-icon {
+        font-size: 20px !important;
+      }
+
+      &-close {
+        position: absolute;
+        right: 20px;
+        top: 8px;
+        font-size: 24px;
+        cursor: pointer;
+        color: $title;
+
+        &:hover {
+          color: $title-dark;
+        }
+      }
+
+      &-toggle {
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      &-icon,
+      &-close,
+      &-toggle {
+        display: block !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header {
+    &__nav {
+      &-menu {
+        padding: 32px 4px 64px;
+      }
+
+      &-list {
+        column-gap: 0;
+      }
+    }
+  }
+}

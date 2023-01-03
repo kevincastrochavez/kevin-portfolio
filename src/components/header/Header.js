@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import DriveFileMoveRoundedIcon from '@mui/icons-material/DriveFileMoveRounded';
@@ -9,6 +9,8 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 function Header() {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <header className='header'>
       <nav className='header__nav container'>
@@ -16,10 +18,14 @@ function Header() {
           Castro
         </a>
 
-        <div className='header__nav-menu'>
+        <div
+          className={`${
+            !toggleMenu ? 'header__nav-menu' : 'header__nav-showMenu'
+          }`}
+        >
           <ul className='header__nav-list grid'>
             <li className='header__nav-item'>
-              <a href='#home' className='header__nav-link'>
+              <a href='#home' className='header__nav-link active-link'>
                 <HomeRoundedIcon className='header__nav-icon uil' /> Home
               </a>
             </li>
@@ -56,10 +62,13 @@ function Header() {
             </li>
           </ul>
 
-          <CloseRoundedIcon />
+          <CloseRoundedIcon
+            className='header__nav-close'
+            onClick={() => setToggleMenu(false)}
+          />
         </div>
 
-        <div className='header__nav-toggle'>
+        <div className='header__nav-toggle' onClick={() => setToggleMenu(true)}>
           <MenuRoundedIcon />
         </div>
       </nav>

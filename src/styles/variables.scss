@@ -22,7 +22,7 @@ $m12: 48px;
 
 // z-index
 $z-tooltip: 10;
-$z-fixed1: 100;
+$z-fixed: 100;
 $z-modal: 1000;
 
 // Colors
@@ -33,6 +33,8 @@ $title-dark: hsl($hue, $sat, 0%);
 $text: hsl($hue, $sat, 46%);
 $body: hsl($hue, $sat, 98%);
 $container: #fff;
+
+$header-height: 48px;
 
 @media screen and (max-width: 992px) {
   $big-font: 2.75rem;
@@ -148,5 +150,19 @@ svg {
   &--flex {
     display: inline-flex;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: $m6;
+    margin-right: $m6;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: $m4;
+    margin-right: $m4;
   }
 }
