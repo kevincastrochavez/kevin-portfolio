@@ -1,13 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 $body-font: 'Poppins', sans-serif;
 
 // Fonts
@@ -35,6 +25,15 @@ $z-tooltip: 10;
 $z-fixed1: 100;
 $z-modal: 1000;
 
+// Colors
+$hue: 0;
+$sat: 0%;
+$title: hsl($hue, $sat, 20%);
+$title-dark: hsl($hue, $sat, 0%);
+$text: hsl($hue, $sat, 46%);
+$body: hsl($hue, $sat, 98%);
+$container: #fff;
+
 @media screen and (max-width: 992px) {
   $big-font: 2.75rem;
   $h1-font: 1.5rem;
@@ -45,10 +44,104 @@ $z-modal: 1000;
   $smaller-font: 0.75rem;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 button,
 input,
 textarea {
   font-family: $body-font;
   font-size: $normal-font;
+}
+
+body {
+  background-color: $body;
+  color: $text;
+}
+
+h1,
+h2,
+h3 {
+  color: $title;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 96px 0 32px;
+
+  &__title {
+    font-size: $h1-font;
+    color: $title;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: $small-font;
+    margin-bottom: 64px;
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+}
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.button {
+  display: inline-block;
+  background-color: $title;
+  color: $container;
+  padding: 20px 32px;
+  border-radius: 16px;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $title-dark;
+  }
+
+  &__icon {
+    margin-left: $m2;
+  }
+
+  &--flex {
+    display: inline-flex;
+    align-items: center;
+  }
 }
