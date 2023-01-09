@@ -1,0 +1,17 @@
+.social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 16px;
+
+  &-icon {
+    font-size: 20px;
+
+    & svg {
+      color: $title;
+
+      &:hover {
+        color: $title-dark;
+      }
+    }
+  }
+}

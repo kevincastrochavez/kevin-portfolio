@@ -1,0 +1,14 @@
+.data {
+  &__title {
+    font-size: $big-font;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    position: relative;
+    font-size: $h3-font;
+    padding-right: 5.4rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Social from './Social';
+import Data from './Data';
 
 function Home() {
   return (
@@ -10,6 +11,8 @@ function Home() {
           <Social />
 
           <div className='home__img'></div>
+
+          <Data />
         </div>
       </div>
     </section>
