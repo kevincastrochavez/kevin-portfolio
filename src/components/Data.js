@@ -7,7 +7,9 @@ function Data() {
 
       <h3 className='data__subtitle'>Web Developer</h3>
 
-      <p className='data__description'>I'm a Web Developer</p>
+      <p className='data__description'>
+        Lorem ipsum dolor sit amet, consectetur adip
+      </p>
 
       <a href='#contact' className='data__contact button button--flex'>
         Say Hello
