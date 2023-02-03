@@ -10,6 +10,7 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  console.log('Ill work on this tomorrow');
 
   return (
     <header className='header'>
