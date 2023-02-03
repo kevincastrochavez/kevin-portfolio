@@ -1,0 +1,39 @@
+.scroll {
+  margin-left: 9.25rem;
+
+  &-name {
+    color: $title;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+
+  &-arrow {
+    font-size: 1.25rem;
+    color: $title;
+  }
+}
+
+.wheel {
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(3.75rem);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .scroll {
+    margin-left: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scroll {
+    display: none;
+  }
+}
