@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import EastIcon from '@mui/icons-material/East';
 import CloseIcon from '@mui/icons-material/Close';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import MonitorIcon from '@mui/icons-material/Monitor';
+import DesktopMacIcon from '@mui/icons-material/DesktopMac';
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 
@@ -22,7 +22,7 @@ function Services() {
       <div className='services__container container grid'>
         <div className='services__content'>
           <div>
-            <MonitorIcon className='services__icon' />
+            <DesktopMacIcon className='services__icon' />
 
             <h3 className='services__title'>
               Web <br /> Designer
