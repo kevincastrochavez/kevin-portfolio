@@ -2,6 +2,7 @@ import React from 'react';
 
 import CV from '../assets/resume.pdf';
 import AboutImg from '../assets/about.jpg';
+
 import Info from './Info';
 
 function About() {
