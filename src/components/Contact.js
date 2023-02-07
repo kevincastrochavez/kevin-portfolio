@@ -1,10 +1,34 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 import EastIcon from '@mui/icons-material/East';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        'dLOh8cyvr5SZ1jboU'
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className='contact section'>
       <h2 className='section__title'>Get in Touch</h2>
@@ -60,7 +84,7 @@ function Contact() {
         <div className='contact__content'>
           <h3 className='contact__title'>Write me your Project</h3>
 
-          <form className='contact__form'>
+          <form className='contact__form' ref={form} onSubmit={sendEmail}>
             <div className='contact__form-div'>
               <label className='contact__form-tag'>Name</label>
 
