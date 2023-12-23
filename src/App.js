@@ -1,6 +1,6 @@
 import Header from './components/header/Header';
 import About from './components/About';
-import Home from './components/Home';
+import Home from './components/home/Home';
 import Skills from './components/skills/Skills';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
