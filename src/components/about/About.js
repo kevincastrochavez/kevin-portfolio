@@ -16,7 +16,7 @@ function About() {
         <div className='about__data'>
           <Info />
 
-          <p className='about__description'>Frontend Developer ...</p>
+          <p className='about__description'>Frontend Engineer</p>
 
           <a download='' href={CV} className='button button--flex'>
             Download CV

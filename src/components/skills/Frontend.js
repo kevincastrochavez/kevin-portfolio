@@ -1,5 +1,5 @@
 import React from 'react';
-import VerifiedIcon from '@mui/icons-material/Verified';
+import SkillData from './SkillData';
 
 function Frontend() {
   return (
@@ -8,79 +8,15 @@ function Frontend() {
 
       <div className='frontend__box'>
         <div className='frontend__group'>
-          <div className='frontend__data'>
-            <VerifiedIcon />
-
-            <div>
-              <h3 className='frontend__name'>HTML5</h3>
-              <span className='frontend__level'>Advanced</span>
-            </div>
-          </div>
-
-          <div className='frontend__data'>
-            <VerifiedIcon />
-
-            <div>
-              <h3 className='frontend__name'>CSS3</h3>
-              <span className='frontend__level'>Advanced</span>
-            </div>
-          </div>
-
-          <div className='frontend__data'>
-            <VerifiedIcon />
-
-            <div>
-              <h3 className='frontend__name'>JavaScript</h3>
-              <span className='frontend__level'>Advanced</span>
-            </div>
-          </div>
-
-          <div className='frontend__data'>
-            <VerifiedIcon />
-
-            <div>
-              <h3 className='frontend__name'>Bootstrap</h3>
-              <span className='frontend__level'>Advanced</span>
-            </div>
-          </div>
+          <SkillData skill='HTML5' />
+          <SkillData skill='CSS3' />
+          <SkillData skill='JavaScript' />
         </div>
 
         <div className='frontend__group'>
-          <div className='frontend__data'>
-            <VerifiedIcon />
-
-            <div>
-              <h3 className='frontend__name'>React</h3>
-              <span className='frontend__level'>Advanced</span>
-            </div>
-          </div>
-
-          <div className='frontend__data'>
-            <VerifiedIcon />
-
-            <div>
-              <h3 className='frontend__name'>Angular</h3>
-              <span className='frontend__level'>Advanced</span>
-            </div>
-          </div>
-
-          <div className='frontend__data'>
-            <VerifiedIcon />
-
-            <div>
-              <h3 className='frontend__name'>SCSS</h3>
-              <span className='frontend__level'>Advanced</span>
-            </div>
-          </div>
-
-          <div className='frontend__data'>
-            <VerifiedIcon />
-
-            <div>
-              <h3 className='frontend__name'>Git</h3>
-              <span className='frontend__level'>Advanced</span>
-            </div>
-          </div>
+          <SkillData skill='React' />
+          <SkillData skill='SCSS' />
+          <SkillData skill='HTML5' />
         </div>
       </div>
     </div>
