@@ -44,8 +44,8 @@ function Header() {
             </li>
 
             <li className='header__nav-item'>
-              <a href='#services' className='header__nav-link'>
-                <WorkRoundedIcon className='header__nav-icon uil' /> Services
+              <a href='#experience' className='header__nav-link'>
+                <WorkRoundedIcon className='header__nav-icon uil' /> Experience
               </a>
             </li>
 
