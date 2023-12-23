@@ -1,7 +1,6 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Social() {
   return (
@@ -21,9 +20,6 @@ function Social() {
         rel='noreferrer'
       >
         <LinkedInIcon />
-      </a>
-      <a href='' className='social-icon' target='_blank' rel='noreferrer'>
-        <InstagramIcon />
       </a>
     </div>
   );
