@@ -2,8 +2,8 @@ import Header from './components/header/Header';
 import About from './components/about/About';
 import Home from './components/home/Home';
 import Skills from './components/skills/Skills';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
+import Experience from './components/experience/Experience';
+import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
         <Skills />
         <Experience />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
