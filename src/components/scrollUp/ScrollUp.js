@@ -15,8 +15,6 @@ function ScrollUp() {
     };
   }, []);
 
-  console.log(heightScrolled);
-
   return (
     <a
       href='#'

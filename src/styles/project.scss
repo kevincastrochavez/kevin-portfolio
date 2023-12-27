@@ -1,0 +1,39 @@
+.project {
+  &__card {
+    background-color: $container;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+
+  &__img {
+    width: 295px;
+    border-radius: 1rem;
+    margin-bottom: $m1;
+  }
+
+  &__title {
+    font-size: $normal-font;
+    font-weight: 500;
+    // margin-bottom: 2px;
+  }
+
+  &__button {
+    color: $text;
+    font-size: $small-font;
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+
+    & svg {
+      font-size: 1rem;
+      transition: 0.4s;
+    }
+
+    &:hover {
+      & svg {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+}
