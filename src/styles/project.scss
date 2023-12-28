@@ -37,3 +37,27 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .project {
+    &__card {
+      padding: 1rem;
+    }
+
+    &__img {
+      margin-bottom: 0.75rem;
+    }
+
+    &__title {
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project {
+    &__img {
+      width: 100%;
+    }
+  }
+}

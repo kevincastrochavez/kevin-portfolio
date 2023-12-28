@@ -32,3 +32,39 @@
   background-color: $title;
   color: $container;
 }
+
+@media screen and (max-width: 992px) {
+  .projects {
+    &__container {
+      gap: 1.25rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    &__container {
+      grid-template-columns: max-content;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projects {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .projects {
+    &__navItem {
+      font-size: $small-font;
+    }
+
+    &__filters {
+      column-gap: 1.25rem;
+    }
+  }
+}

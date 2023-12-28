@@ -12,14 +12,14 @@ function Projects() {
       setVisibleProjects(projects);
     } else {
       const filteredProjects = projects.filter(
-        (project) => project.category === navItemSelected.name
+        (project) => project.category.toLowerCase() === navItemSelected.name
       );
       setVisibleProjects(filteredProjects);
     }
   }, [navItemSelected]);
 
   const handleTabClick = (e, index) => {
-    setNavItemSelected({ name: e.target.textContent });
+    setNavItemSelected({ name: e.target.textContent.toLowerCase() });
     setActiveTab(index);
   };
 
