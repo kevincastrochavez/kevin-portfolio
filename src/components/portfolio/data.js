@@ -26,7 +26,7 @@ export const projects = [
     category: '3d',
   },
   {
-    id: 4,
+    id: 5,
     image: imageExample,
     title: '3D 2',
     category: '3d',

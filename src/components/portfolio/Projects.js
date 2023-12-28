@@ -36,7 +36,7 @@ function Projects() {
   ));
 
   const projectItems = visibleProjects?.map((projectItem) => (
-    <Project item={projectItem} />
+    <Project key={projectItem.id} item={projectItem} />
   ));
 
   return (
