@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import SchoolIcon from '@mui/icons-material/School';
 
 import WorkIcon from '@mui/icons-material/Work';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import ExperienceItem from './ExperienceItem';
 
 function Experience() {
   const [toggleState, setToggleState] = useState(1);
@@ -52,81 +52,30 @@ function Experience() {
                 : 'experience__content'
             }
           >
-            <div className='experience__data'>
-              <div>
-                <h3 className='experience__title'>Software Engineer</h3>
-
-                <span className='experience__subtitle'>BYU-I - USA</span>
-
-                <div className='experience__calendar'>
-                  <CalendarMonthIcon /> 2021 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className='experience__rounder'></span>
-
-                <span className='experience__line'></span>
-              </div>
-            </div>
-
-            <div className='experience__data'>
-              <div></div>
-
-              <div>
-                <span className='experience__rounder'></span>
-
-                <span className='experience__line'></span>
-              </div>
-
-              <div>
-                <h3 className='experience__title'>Teaching Assistant</h3>
-
-                <span className='experience__subtitle'>BYU-I</span>
-
-                <div className='experience__calendar'>
-                  <CalendarMonthIcon /> 2021 - Present
-                </div>
-              </div>
-            </div>
-
-            <div className='experience__data'>
-              <div>
-                <h3 className='experience__title'>Online Tutor</h3>
-
-                <span className='experience__subtitle'>BYU-I</span>
-
-                <div className='experience__calendar'>
-                  <CalendarMonthIcon /> 2021 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className='experience__rounder'></span>
-
-                <span className='experience__line'></span>
-              </div>
-            </div>
-
-            <div className='experience__data'>
-              <div></div>
-
-              <div>
-                <span className='experience__rounder'></span>
-
-                <span className='experience__line'></span>
-              </div>
-
-              <div>
-                <h3 className='experience__title'>Family Search</h3>
-
-                <span className='experience__subtitle'>BYU-I</span>
-
-                <div className='experience__calendar'>
-                  <CalendarMonthIcon /> 2021 - Present
-                </div>
-              </div>
-            </div>
+            <ExperienceItem
+              side='left'
+              title='Software Engineer'
+              subtitle='BYU-I - USA'
+              date='2021 - Present'
+            />
+            <ExperienceItem
+              side='right'
+              title='Teaching Assistant'
+              subtitle='BYU-I'
+              date='2021 - Present'
+            />
+            <ExperienceItem
+              side='left'
+              title='Online Tutor'
+              subtitle='BYU-I'
+              date='2021 - Present'
+            />
+            <ExperienceItem
+              side='right'
+              title='Family Search'
+              subtitle='BYU-I'
+              date='2021 - Present'
+            />
           </div>
 
           <div
@@ -136,61 +85,24 @@ function Experience() {
                 : 'experience__content'
             }
           >
-            <div className='experience__data'>
-              <div>
-                <h3 className='experience__title'>Software Engineer</h3>
-
-                <span className='experience__subtitle'>BYU-I</span>
-
-                <div className='experience__calendar'>
-                  <CalendarMonthIcon /> 2021 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className='experience__rounder'></span>
-
-                <span className='experience__line'></span>
-              </div>
-            </div>
-
-            <div className='experience__data'>
-              <div></div>
-
-              <div>
-                <span className='experience__rounder'></span>
-
-                <span className='experience__line'></span>
-              </div>
-
-              <div>
-                <h3 className='experience__title'>Teaching Assistant</h3>
-
-                <span className='experience__subtitle'>BYU-I</span>
-
-                <div className='experience__calendar'>
-                  <CalendarMonthIcon /> 2021 - Present
-                </div>
-              </div>
-            </div>
-
-            <div className='experience__data'>
-              <div>
-                <h3 className='experience__title'>Online Tutor</h3>
-
-                <span className='experience__subtitle'>BYU-I</span>
-
-                <div className='experience__calendar'>
-                  <CalendarMonthIcon /> 2021 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className='experience__rounder'></span>
-
-                <span className='experience__line'></span>
-              </div>
-            </div>
+            <ExperienceItem
+              side='left'
+              title='Online Tutor'
+              subtitle='BYU-I'
+              date='2021 - Present'
+            />
+            <ExperienceItem
+              side='right'
+              title='Family Search'
+              subtitle='BYU-I'
+              date='2021 - Present'
+            />
+            <ExperienceItem
+              side='left'
+              title='Online Tutor'
+              subtitle='BYU-I'
+              date='2021 - Present'
+            />
           </div>
         </div>
       </div>
