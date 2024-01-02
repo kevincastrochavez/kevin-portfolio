@@ -49,6 +49,12 @@
 
 @media screen and (max-width: 768px) {
   .data {
+    grid-column: 2/4;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .data {
     grid-column: 1/3;
   }
 }
