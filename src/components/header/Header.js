@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import DriveFileMoveRoundedIcon from '@mui/icons-material/DriveFileMoveRounded';
@@ -11,9 +11,21 @@ import HeaderLink from './HeaderLink';
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [heightScrolled, setHeightScrolled] = useState(0);
+  const minHeightToShowNavShadow = 30;
+
+  useEffect(() => {
+    window.addEventListener('scroll', function () {
+      setHeightScrolled(window.scrollY);
+    });
+  }, []);
 
   return (
-    <header className='header'>
+    <header
+      className={`header ${
+        heightScrolled > minHeightToShowNavShadow && 'header__scrolled'
+      }`}
+    >
       <nav className='header__nav container'>
         <a href='index.html' className='header__nav-logo'>
           Castro

@@ -11,7 +11,7 @@ function ScrollUp() {
     });
 
     return () => {
-      window.removeEventListener('scroll', () => console.log('removed'));
+      window.removeEventListener('scroll', () => {});
     };
   }, []);
 

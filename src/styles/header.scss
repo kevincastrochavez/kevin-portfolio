@@ -6,6 +6,10 @@
   z-index: $z-fixed;
   background-color: $body;
 
+  &__scrolled {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
   &__nav {
     height: calc($header-height + 24px);
     display: flex;
