@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 
 const useHeightScrolled = () => {
   const [heightScrolled, setHeightScrolled] = useState(0);
-  console.log(heightScrolled);
 
   useEffect(() => {
     window.addEventListener('scroll', function () {
@@ -17,4 +16,20 @@ const useHeightScrolled = () => {
   return { heightScrolled };
 };
 
-export { useHeightScrolled };
+const useWindowSize = () => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener('resize', function () {
+      setWidth(window.innerWidth);
+    });
+
+    return () => {
+      window.removeEventListener('resize', () => {});
+    };
+  }, []);
+
+  return { width };
+};
+
+export { useHeightScrolled, useWindowSize };

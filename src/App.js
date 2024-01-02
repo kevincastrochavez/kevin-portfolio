@@ -8,7 +8,11 @@ import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollUp/ScrollUp';
 import Portfolio from './components/portfolio/Portfolio';
 
+import { useWindowSize } from './utils';
+
 function App() {
+  const { width } = useWindowSize();
+
   return (
     <>
       <Header />
@@ -22,7 +26,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <ScrollUp />
+      {width <= 768 && <ScrollUp />}
     </>
   );
 }

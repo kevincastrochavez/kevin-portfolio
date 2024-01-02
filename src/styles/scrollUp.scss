@@ -23,23 +23,6 @@
   bottom: 3rem;
 }
 
-@media screen and (max-width: 992px) {
-  .scrollUp {
-    right: 1.25rem;
-    padding: 0.25rem 0.4rem;
-
-    & svg {
-      font-size: 1.25rem;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .scrollUp {
-    bottom: 4rem;
-  }
-}
-
 @media screen and (max-width: 350px) {
   .scrollUp {
     right: 1rem;
