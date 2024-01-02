@@ -8,17 +8,12 @@ import SendRoundedIcon from '@mui/icons-material/SendRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import HeaderLink from './HeaderLink';
+import { useHeightScrolled } from '../../utils';
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [heightScrolled, setHeightScrolled] = useState(0);
+  const { heightScrolled } = useHeightScrolled();
   const minHeightToShowNavShadow = 30;
-
-  useEffect(() => {
-    window.addEventListener('scroll', function () {
-      setHeightScrolled(window.scrollY);
-    });
-  }, []);
 
   return (
     <header
