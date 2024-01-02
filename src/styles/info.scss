@@ -39,12 +39,6 @@
 
 @media screen and (max-width: 576px) {
   .info {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .info {
     grid-template-columns: repeat(2, 1fr);
   }
 }
