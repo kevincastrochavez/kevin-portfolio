@@ -5,6 +5,61 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import ExperienceItem from './ExperienceItem';
 
+const educationList = [
+  {
+    side: 'left',
+    title: 'Software Engineer',
+    subtitle: 'BYU-I - USA',
+    date: '2021 - Present',
+    id: 1,
+  },
+  {
+    side: 'right',
+    title: 'Teaching Assistant',
+    subtitle: 'BYU-I',
+    date: '2021 - Present',
+    id: 2,
+  },
+  {
+    side: 'left',
+    title: 'Software Engineer',
+    subtitle: 'BYU-I - USA',
+    date: '2021 - Present',
+    id: 3,
+  },
+  {
+    side: 'right',
+    title: 'Teaching Assistant',
+    subtitle: 'BYU-I',
+    date: '2021 - Present',
+    id: 4,
+  },
+];
+
+const workList = [
+  {
+    side: 'left',
+    title: 'Software Engineer',
+    subtitle: 'BYU-I - USA',
+    date: '2021 - Present',
+    id: 5,
+  },
+  {
+    side: 'right',
+    title: 'Teaching Assistant',
+    subtitle: 'BYU-I',
+    date: '2021 - Present',
+    id: 6,
+  },
+  {
+    side: 'left',
+    title: 'Software Engineer',
+    subtitle: 'BYU-I - USA',
+    date: '2021 - Present',
+    id: 7,
+  },
+];
+
 function Experience() {
   const [toggleState, setToggleState] = useState(1);
 
@@ -52,30 +107,9 @@ function Experience() {
                 : 'experience__content'
             }
           >
-            <ExperienceItem
-              side='left'
-              title='Software Engineer'
-              subtitle='BYU-I - USA'
-              date='2021 - Present'
-            />
-            <ExperienceItem
-              side='right'
-              title='Teaching Assistant'
-              subtitle='BYU-I'
-              date='2021 - Present'
-            />
-            <ExperienceItem
-              side='left'
-              title='Online Tutor'
-              subtitle='BYU-I'
-              date='2021 - Present'
-            />
-            <ExperienceItem
-              side='right'
-              title='Family Search'
-              subtitle='BYU-I'
-              date='2021 - Present'
-            />
+            {educationList?.map((item) => (
+              <ExperienceItem {...item} key={item.id} />
+            ))}
           </div>
 
           <div
@@ -85,24 +119,9 @@ function Experience() {
                 : 'experience__content'
             }
           >
-            <ExperienceItem
-              side='left'
-              title='Online Tutor'
-              subtitle='BYU-I'
-              date='2021 - Present'
-            />
-            <ExperienceItem
-              side='right'
-              title='Family Search'
-              subtitle='BYU-I'
-              date='2021 - Present'
-            />
-            <ExperienceItem
-              side='left'
-              title='Online Tutor'
-              subtitle='BYU-I'
-              date='2021 - Present'
-            />
+            {workList?.map((item) => (
+              <ExperienceItem {...item} key={item.id} />
+            ))}
           </div>
         </div>
       </div>
