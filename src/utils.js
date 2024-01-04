@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+// Custom Hooks for utility tasks
+
 const useHeightScrolled = () => {
   const [heightScrolled, setHeightScrolled] = useState(0);
 
