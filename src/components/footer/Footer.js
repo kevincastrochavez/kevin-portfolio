@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SocialLink from '../home/social/SocialLink';
 
 function Footer() {
+  // TODO: Update footer links
   return (
     <footer className='footer'>
       <div className='footer__container container'>

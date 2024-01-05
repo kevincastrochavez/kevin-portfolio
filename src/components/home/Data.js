@@ -8,6 +8,8 @@ function Data() {
       <h3 className='data__subtitle'>Front-End Engineer</h3>
 
       <p className='data__description'>
+        {/* TODO: Choose an appropriate description*/}
+        {/* TODO: Change picture*/}
         Lorem ipsum dolor sit amet, consectetur adip
       </p>
 

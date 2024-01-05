@@ -12,6 +12,8 @@ import HeaderLink from './HeaderLink';
 import { useHeightScrolled } from '../../utils';
 
 function Header() {
+  // TODO: Modify header to a side drawer
+  // TODO: Select color for wayfinder
   const [toggleMenu, setToggleMenu] = useState(false);
   const { heightScrolled } = useHeightScrolled();
   const minHeightToShowNavShadow = 30;

@@ -9,6 +9,7 @@ function Skills() {
       <span className='section__subtitle'>My Technical Level</span>
 
       <div className='skills__container container grid'>
+        {/* TODO: Include appropriate skills */}
         <Frontend />
         <Backend />
       </div>

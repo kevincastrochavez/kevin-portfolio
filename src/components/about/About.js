@@ -19,6 +19,7 @@ function About() {
           <p className='about__description'>Frontend Engineer</p>
 
           <a download='' href={CV} className='button button--flex'>
+            {/* TODO: Update and upload CV */}
             Download CV
             <svg
               className='button__icon'

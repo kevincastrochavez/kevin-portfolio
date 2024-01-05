@@ -5,6 +5,8 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import ExperienceItem from './ExperienceItem';
 
+// TODO: Include real education and work experience
+// TODO: Give it some color
 const educationList = [
   {
     side: 'left',

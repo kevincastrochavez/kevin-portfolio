@@ -7,6 +7,7 @@ import InfoBox from './InfoBox';
 function Info() {
   return (
     <div className='info grid'>
+      {/* TODO: Choose appropriate information for the InfoBox components */}
       <InfoBox
         Icon={EmojiEventsIcon}
         title='Experience'

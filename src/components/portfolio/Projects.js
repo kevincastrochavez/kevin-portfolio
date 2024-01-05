@@ -36,6 +36,8 @@ function Projects() {
   ));
 
   const projectItems = visibleProjects?.map((projectItem) => (
+    // TODO: Fix cards and customize them
+    // TODO: Give more space and better layout
     <Project key={projectItem.id} item={projectItem} />
   ));
 

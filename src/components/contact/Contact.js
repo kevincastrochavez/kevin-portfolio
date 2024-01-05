@@ -7,6 +7,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Contact() {
+  // TODO: Update information in Contact form
   const form = useRef();
 
   const sendEmail = (e) => {
