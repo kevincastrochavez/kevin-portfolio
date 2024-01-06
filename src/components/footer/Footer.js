@@ -6,6 +6,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SocialLink from '../home/social/SocialLink';
 
 function Footer() {
+  const footerLinks = [
+    'Home',
+    'About',
+    'Skills',
+    'Experience',
+    'Portfolio',
+    'Contact',
+  ];
+
   // TODO: Update footer links
   return (
     <footer className='footer'>
@@ -13,29 +22,13 @@ function Footer() {
         <h1 className='footer__title'>Castro</h1>
 
         <ul className='footer__list'>
-          <li>
-            <a href='#about' className='footer__link'>
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href='#about' className='footer__link'>
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href='#about' className='footer__link'>
-              About
-            </a>
-          </li>
-
-          <li>
-            <a href='#about' className='footer__link'>
-              About
-            </a>
-          </li>
+          {footerLinks?.map((link, index) => (
+            <li key={index}>
+              <a href={`#${link.toLowerCase()}`} className='footer__link'>
+                {link}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <div className='footer__social'>
