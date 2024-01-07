@@ -16,7 +16,7 @@ function Frontend() {
         <div className='frontend__group'>
           <SkillData skill='React' />
           <SkillData skill='SCSS' />
-          <SkillData skill='HTML5' />
+          <SkillData skill='Next Js' />
         </div>
       </div>
     </div>
