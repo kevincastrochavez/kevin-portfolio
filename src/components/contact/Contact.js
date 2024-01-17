@@ -4,19 +4,22 @@ import emailjs from '@emailjs/browser';
 import EastIcon from '@mui/icons-material/East';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import CallIcon from '@mui/icons-material/Call';
 
 function Contact() {
   // TODO: Update information in Contact form
   const form = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const messageRef = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAIL_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        'service_p9ka8ki',
+        'template_hiphu1s',
         form.current,
         'dLOh8cyvr5SZ1jboU'
       )
@@ -39,46 +42,51 @@ function Contact() {
           <h3 className='contact__title'>Talk to Me</h3>
 
           <div className='contact__info'>
-            <div className='contact__card'>
+            <a
+              href='mailto:kevincastrochavez4@gmail.com'
+              target='_blank'
+              className='contact__card'
+              rel='noreferrer'
+            >
               <EmailIcon />
 
               <h3 className='contact__card-title'>Email</h3>
 
-              <span className='contact__card-data'>
-                kevincastrochavez4@gmail.com
-              </span>
+              <span className='contact__card-data'>kevincastro@gmail.com</span>
 
-              <a
-                href='mailto:kevincastrochavez4@gmail.com'
-                className='contact__button'
-              >
+              <p className='contact__button'>
                 Write me <EastIcon />
-              </a>
-            </div>
+              </p>
+            </a>
 
-            <div className='contact__card'>
+            <a
+              href='https://wa.me/12086174867?text=Hello!'
+              target='_blank'
+              className='contact__card'
+              rel='noreferrer'
+            >
               <WhatsAppIcon />
 
               <h3 className='contact__card-title'>WhatsApp</h3>
 
-              <span className='contact__card-data'>208-617-4867</span>
+              <span className='contact__card-data'>+1 208-617-4867</span>
 
-              <a href='#' className='contact__button'>
-                Write me <EastIcon />
-              </a>
-            </div>
+              <p className='contact__button'>
+                Message me <EastIcon />
+              </p>
+            </a>
 
-            <div className='contact__card'>
-              <FacebookIcon />
+            <a href='tel:+12086174867' className='contact__card'>
+              <CallIcon />
 
-              <h3 className='contact__card-title'>Messenger</h3>
+              <h3 className='contact__card-title'>Phone Number</h3>
 
-              <span className='contact__card-data'>Whatever</span>
+              <span className='contact__card-data'>+1 208-617-4867</span>
 
-              <a href='#' className='contact__button'>
-                Write me <EastIcon />
-              </a>
-            </div>
+              <p className='contact__button'>
+                Call me <EastIcon />
+              </p>
+            </a>
           </div>
         </div>
 
@@ -91,9 +99,10 @@ function Contact() {
 
               <input
                 type='text'
-                name='name'
+                name='user_name'
                 className='contact__form-input'
-                placeholder='Insert your Name'
+                placeholder='Jonh Doe'
+                ref={nameRef}
               />
             </div>
 
@@ -102,9 +111,10 @@ function Contact() {
 
               <input
                 type='email'
-                name='email'
+                name='user_email'
                 className='contact__form-input'
-                placeholder='Insert your Email'
+                placeholder='johndoe@gmail.com'
+                ref={emailRef}
               />
             </div>
 
@@ -112,11 +122,12 @@ function Contact() {
               <label className='contact__form-tag'>Project</label>
 
               <textarea
-                name='project'
+                name='message'
                 cols='30'
                 rows='10'
                 className='contact__form-input'
-                placeholder='Write your Project Idea'
+                placeholder='I have this wonderful idea I would love you to take a look at! ...'
+                ref={messageRef}
               ></textarea>
             </div>
 
