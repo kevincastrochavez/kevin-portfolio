@@ -1,20 +1,23 @@
 import React from 'react';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import CodeIcon from '@mui/icons-material/Code';
 import WorkIcon from '@mui/icons-material/Work';
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import InfoBox from './InfoBox';
 
 function Info() {
   return (
     <div className='info grid'>
-      {/* TODO: Choose appropriate information for the InfoBox components */}
+      <InfoBox Icon={WorkIcon} title='Experience' subtitle='2 years working' />
       <InfoBox
-        Icon={EmojiEventsIcon}
-        title='Experience'
-        subtitle='2 years working'
+        Icon={CodeIcon}
+        title='Web Development'
+        subtitle='Full-Stack Web Applications'
       />
-      <InfoBox Icon={WorkIcon} title='Completed' subtitle='48+ Projects' />
-      <InfoBox Icon={SupportAgentIcon} title='Support' subtitle='Online 24/7' />
+      <InfoBox
+        Icon={ViewInArIcon}
+        title='3D Objects'
+        subtitle='Design & Modeling'
+      />
     </div>
   );
 }
