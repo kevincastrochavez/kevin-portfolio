@@ -5,7 +5,7 @@ import EastIcon from '@mui/icons-material/East';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from '@mui/icons-material/Call';
-import { Alert, Snackbar } from '@mui/material';
+import { Alert, Backdrop, CircularProgress, Snackbar } from '@mui/material';
 
 function Contact() {
   // TODO: Update information in Contact form
@@ -31,8 +31,6 @@ function Contact() {
       setShowWarning(true);
       console.log('Missing something');
     } else {
-      setLoading(false);
-      setShowSuccess(true);
       emailjs
         .sendForm(
           'service_p9ka8ki',
@@ -42,6 +40,8 @@ function Contact() {
         )
         .then(
           (result) => {
+            setLoading(false);
+            setShowSuccess(true);
             e.target.reset();
           },
           (error) => {
@@ -205,6 +205,15 @@ function Contact() {
             Thank you! I will contact you as soon as possible
           </Alert>
         </Snackbar>
+      )}
+      {loading && (
+        <Backdrop
+          sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+          open={loading}
+          onClick={() => setLoading(false)}
+        >
+          <CircularProgress color='inherit' />
+        </Backdrop>
       )}
     </section>
   );
