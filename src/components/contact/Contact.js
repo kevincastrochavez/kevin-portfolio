@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 import EastIcon from '@mui/icons-material/East';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CallIcon from '@mui/icons-material/Call';
+import { Alert, Snackbar } from '@mui/material';
 
 function Contact() {
   // TODO: Update information in Contact form
@@ -13,24 +14,41 @@ function Contact() {
   const emailRef = useRef();
   const messageRef = useRef();
 
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [showWarning, setShowWarning] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const sendEmail = (e) => {
+    setLoading(true);
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_p9ka8ki',
-        'template_hiphu1s',
-        form.current,
-        'dLOh8cyvr5SZ1jboU'
-      )
-      .then(
-        (result) => {
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (
+      nameRef.current.value === '' ||
+      emailRef.current.value === '' ||
+      messageRef.current.value === ''
+    ) {
+      setLoading(false);
+      setShowWarning(true);
+      console.log('Missing something');
+    } else {
+      setLoading(false);
+      setShowSuccess(true);
+      emailjs
+        .sendForm(
+          'service_p9ka8ki',
+          'template_hiphu1s',
+          form.current,
+          'dLOh8cyvr5SZ1jboU'
+        )
+        .then(
+          (result) => {
+            e.target.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   return (
@@ -154,6 +172,40 @@ function Contact() {
           </form>
         </div>
       </div>
+      {showWarning && (
+        <Snackbar
+          open={showWarning}
+          autoHideDuration={6000}
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+          onClose={() => setShowWarning(false)}
+        >
+          <Alert
+            onClose={() => setShowWarning(false)}
+            severity='warning'
+            variant='filled'
+            sx={{ width: '100%' }}
+          >
+            Please fill out all the fields and then try again
+          </Alert>
+        </Snackbar>
+      )}
+      {showSuccess && (
+        <Snackbar
+          open={showSuccess}
+          autoHideDuration={6000}
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+          onClose={() => setShowSuccess(false)}
+        >
+          <Alert
+            onClose={() => setShowSuccess(false)}
+            severity='success'
+            variant='filled'
+            sx={{ width: '100%' }}
+          >
+            Thank you! I will contact you as soon as possible
+          </Alert>
+        </Snackbar>
+      )}
     </section>
   );
 }
