@@ -9,14 +9,18 @@ function Frontend() {
       <div className='frontend__box'>
         <div className='frontend__group'>
           <SkillData skill='HTML5' />
-          <SkillData skill='CSS3' />
           <SkillData skill='JavaScript' />
+          <SkillData skill='AJAX' />
+          <SkillData skill='TypeScript' />
+          <SkillData skill='React Hooks' />
         </div>
 
         <div className='frontend__group'>
-          <SkillData skill='React' />
+          <SkillData skill='CSS3' />
           <SkillData skill='SCSS' />
-          <SkillData skill='Next Js' />
+          <SkillData skill='Angular' />
+          <SkillData skill='React' />
+          <SkillData skill='Context API' />
         </div>
       </div>
     </div>
