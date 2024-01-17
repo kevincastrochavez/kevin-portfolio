@@ -8,7 +8,6 @@ import CallIcon from '@mui/icons-material/Call';
 import { Alert, Backdrop, CircularProgress, Snackbar } from '@mui/material';
 
 function Contact() {
-  // TODO: Update information in Contact form
   const form = useRef();
   const nameRef = useRef();
   const emailRef = useRef();
@@ -29,7 +28,6 @@ function Contact() {
     ) {
       setLoading(false);
       setShowWarning(true);
-      console.log('Missing something');
     } else {
       emailjs
         .sendForm(
