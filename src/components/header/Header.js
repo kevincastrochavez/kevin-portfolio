@@ -36,10 +36,10 @@ function Header() {
         >
           <ul className='header__nav-list grid'>
             <HeaderLink link='Home' Icon={HomeRoundedIcon} />
+            <HeaderLink link='Portfolio' Icon={ImageRoundedIcon} />
             <HeaderLink link='About' Icon={PersonRoundedIcon} />
             <HeaderLink link='Skills' Icon={DriveFileMoveRoundedIcon} />
             <HeaderLink link='Experience' Icon={WorkRoundedIcon} />
-            <HeaderLink link='Portfolio' Icon={ImageRoundedIcon} />
             <HeaderLink link='Contact' Icon={SendRoundedIcon} />
           </ul>
 

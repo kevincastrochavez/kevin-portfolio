@@ -7,17 +7,13 @@ import InfoBox from './InfoBox';
 function Info() {
   return (
     <div className='info grid'>
-      <InfoBox Icon={WorkIcon} title='Experience' subtitle='2 years working' />
-      <InfoBox
-        Icon={CodeIcon}
-        title='Web Development'
-        subtitle='Full-Stack Web Applications'
-      />
+      <InfoBox Icon={CodeIcon} title='Web Dev' subtitle='Web Applications' />
       <InfoBox
         Icon={ViewInArIcon}
         title='3D Objects'
         subtitle='Design & Modeling'
       />
+      <InfoBox Icon={WorkIcon} title='Experience' subtitle='2 years working' />
     </div>
   );
 }

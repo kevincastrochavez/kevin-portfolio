@@ -19,10 +19,10 @@ function App() {
 
       <main className='main'>
         <Home />
+        <Portfolio />
         <About />
         <Skills />
         <Experience />
-        <Portfolio />
         <Contact />
       </main>
       <Footer />

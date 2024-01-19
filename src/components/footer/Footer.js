@@ -8,14 +8,13 @@ import SocialLink from '../home/social/SocialLink';
 function Footer() {
   const footerLinks = [
     'Home',
+    'Portfolio',
     'About',
     'Skills',
     'Experience',
-    'Portfolio',
     'Contact',
   ];
 
-  // TODO: Update footer links
   return (
     <footer className='footer'>
       <div className='footer__container container'>
