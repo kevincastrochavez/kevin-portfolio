@@ -11,8 +11,8 @@ const educationList = [
   {
     side: 'left',
     title: 'Software Engineer',
-    subtitle: 'BYU-I - USA',
-    date: '2021 - Present',
+    subtitle: 'BYU-I - Rexburg, ID',
+    date: 'Apr 2021 - Apr 2024',
     id: 1,
   },
   {
@@ -44,21 +44,21 @@ const workList = [
     title: 'Web Developer Intern',
     subtitle: 'FamilySearch - Lehi, UT',
     date: 'May 2023 - Dec 2023',
-    id: 5,
+    id: 1,
   },
   {
     side: 'right',
     title: 'Teaching Assistant',
     subtitle: 'BYU-I - Rexburg, ID',
     date: 'Sep 2021 - Present',
-    id: 6,
+    id: 2,
   },
   {
     side: 'left',
     title: 'Online Teaching Assistant',
     subtitle: 'BYU-I - Rexburg, ID',
     date: 'Jan 2022 - Present',
-    id: 7,
+    id: 3,
   },
 ];
 
