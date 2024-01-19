@@ -17,8 +17,6 @@
     cursor: pointer;
     padding: 0.25rem 0.75rem;
     gap: $m1;
-    // width: 162px;
-    // justify-content: center;
 
     & svg {
       font-size: 1.8rem;
@@ -46,7 +44,7 @@
 
   &__sections {
     display: grid;
-    grid-template-columns: 0.5fr;
+    grid-template-columns: 0.55fr;
     justify-content: center;
   }
 

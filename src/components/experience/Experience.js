@@ -5,7 +5,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import ExperienceItem from './ExperienceItem';
 
-// TODO: Include real education and work experience
+// TODO: Include real education
 // TODO: Give it some color
 const educationList = [
   {
@@ -41,23 +41,23 @@ const educationList = [
 const workList = [
   {
     side: 'left',
-    title: 'Software Engineer',
-    subtitle: 'BYU-I - USA',
-    date: '2021 - Present',
+    title: 'Web Developer Intern',
+    subtitle: 'FamilySearch - Lehi, UT',
+    date: 'May 2023 - Dec 2023',
     id: 5,
   },
   {
     side: 'right',
     title: 'Teaching Assistant',
-    subtitle: 'BYU-I',
-    date: '2021 - Present',
+    subtitle: 'BYU-I - Rexburg, ID',
+    date: 'Sep 2021 - Present',
     id: 6,
   },
   {
     side: 'left',
-    title: 'Software Engineer',
-    subtitle: 'BYU-I - USA',
-    date: '2021 - Present',
+    title: 'Online Teaching Assistant',
+    subtitle: 'BYU-I - Rexburg, ID',
+    date: 'Jan 2022 - Present',
     id: 7,
   },
 ];
