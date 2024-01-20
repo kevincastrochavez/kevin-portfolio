@@ -7,6 +7,7 @@ import ExperienceItem from './ExperienceItem';
 
 // TODO: Include real education
 // TODO: Give it some color
+
 const educationList = [
   {
     side: 'left',
