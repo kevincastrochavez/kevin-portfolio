@@ -17,6 +17,15 @@ function Header() {
   const { heightScrolled } = useHeightScrolled();
   const minHeightToShowNavShadow = 30;
 
+  const linksList = [
+    { link: 'Home', icon: HomeRoundedIcon, id: 1 },
+    { link: 'Portfolio', icon: ImageRoundedIcon, id: 2 },
+    { link: 'About', icon: PersonRoundedIcon, id: 3 },
+    { link: 'Skills', icon: DriveFileMoveRoundedIcon, id: 4 },
+    { link: 'Experience', icon: WorkRoundedIcon, id: 5 },
+    { link: 'Contact', icon: SendRoundedIcon, id: 6 },
+  ];
+
   return (
     <header
       className={`header ${
@@ -34,12 +43,14 @@ function Header() {
           }`}
         >
           <ul className='header__nav-list grid'>
-            <HeaderLink link='Home' Icon={HomeRoundedIcon} />
-            <HeaderLink link='Portfolio' Icon={ImageRoundedIcon} />
-            <HeaderLink link='About' Icon={PersonRoundedIcon} />
-            <HeaderLink link='Skills' Icon={DriveFileMoveRoundedIcon} />
-            <HeaderLink link='Experience' Icon={WorkRoundedIcon} />
-            <HeaderLink link='Contact' Icon={SendRoundedIcon} />
+            {linksList?.map((link) => (
+              <HeaderLink
+                key={link?.id}
+                link={link?.link}
+                Icon={link?.icon}
+                onClick={() => setToggleMenu(false)}
+              />
+            ))}
           </ul>
 
           <CloseRoundedIcon
@@ -52,6 +63,13 @@ function Header() {
           <MenuRoundedIcon />
         </div>
       </nav>
+
+      {toggleMenu && (
+        <div
+          className='header__overlay'
+          onClick={() => setToggleMenu(false)}
+        ></div>
+      )}
     </header>
   );
 }

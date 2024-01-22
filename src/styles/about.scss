@@ -8,7 +8,6 @@
   &__img {
     width: 350px;
     border-radius: 1.5rem;
-    justify-self: center;
   }
 
   &__description {
@@ -26,6 +25,7 @@
 
     &__img {
       width: 220px;
+      justify-self: center;
     }
 
     &__data {

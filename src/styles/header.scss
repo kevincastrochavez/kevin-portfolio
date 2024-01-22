@@ -93,10 +93,11 @@
         flex-direction: row;
         gap: $m4;
         padding: $m2;
+        font-size: 16px;
       }
 
       &-icon {
-        font-size: 20px !important;
+        font-size: 20px;
       }
 
       &-close {
@@ -127,6 +128,19 @@
       &-toggle {
         display: block !important;
       }
+    }
+
+    &__overlay {
+      position: fixed;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      inset: 0px;
+      background-color: rgba(0, 0, 0, 0.5);
+      -webkit-tap-highlight-color: transparent;
+      z-index: -1;
     }
   }
 }
