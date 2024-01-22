@@ -8,8 +8,7 @@ function Data() {
       <h3 className='data__subtitle'>Front-End Engineer</h3>
 
       <p className='data__description'>
-        {/* TODO: Choose an appropriate description*/}
-        Lorem ipsum dolor sit amet, consectetur adip
+        Solving problems through responsive web applications
       </p>
 
       <a href='#contact' className='data__contact button button--flex'>

@@ -8,12 +8,12 @@ function Info() {
   return (
     <div className='info grid'>
       <InfoBox Icon={CodeIcon} title='Web Dev' subtitle='Web Applications' />
+      <InfoBox Icon={WorkIcon} title='Experience' subtitle='2 years working' />
       <InfoBox
         Icon={ViewInArIcon}
         title='3D Objects'
         subtitle='Design & Modeling'
       />
-      <InfoBox Icon={WorkIcon} title='Experience' subtitle='2 years working' />
     </div>
   );
 }
