@@ -9,7 +9,6 @@ function Data() {
 
       <p className='data__description'>
         {/* TODO: Choose an appropriate description*/}
-        {/* TODO: Change picture*/}
         Lorem ipsum dolor sit amet, consectetur adip
       </p>
 
