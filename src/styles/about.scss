@@ -8,6 +8,13 @@
   &__img {
     width: 350px;
     border-radius: 1.5rem;
+
+    // Gray out picture
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
 
   &__description {
