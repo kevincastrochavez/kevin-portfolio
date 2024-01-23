@@ -51,6 +51,6 @@ export const projectsNav = [
     name: 'web',
   },
   {
-    name: '3d',
+    name: '3D',
   },
 ];
