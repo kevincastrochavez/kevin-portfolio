@@ -8,9 +8,11 @@
 
     & svg {
       color: $title;
+      transition: all 0.2s ease;
+      font-size: 30px;
 
       &:hover {
-        color: $title-dark;
+        color: $accent;
       }
     }
   }

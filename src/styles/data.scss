@@ -26,6 +26,15 @@
     max-width: 400px;
     margin-bottom: 48px;
   }
+
+  &__contact {
+    background-color: $accent;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $accent-hovered;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {

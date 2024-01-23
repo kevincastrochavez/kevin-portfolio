@@ -33,7 +33,6 @@
     column-gap: 1.25rem;
 
     &-link {
-      background-color: $title;
       color: $container;
       font-size: 1.125rem;
       padding: 0.4rem;
@@ -42,7 +41,13 @@
     }
 
     &-link svg {
-      color: white;
+      color: $title;
+      font-size: 30px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $accent;
+      }
     }
 
     &:hover {

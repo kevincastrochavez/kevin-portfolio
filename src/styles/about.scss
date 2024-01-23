@@ -21,6 +21,14 @@
     padding: 0 4rem 0 0;
     margin-bottom: 40px;
   }
+
+  &__data a {
+    background-color: $accent;
+
+    &:hover {
+      background-color: $accent-hovered;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {

@@ -28,6 +28,10 @@
     & svg {
       width: 44px;
       font-size: 32px;
+
+      &:hover {
+        color: $accent;
+      }
     }
   }
 
