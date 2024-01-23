@@ -5,7 +5,6 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import ExperienceItem from './ExperienceItem';
 
-// TODO: Include real education
 // TODO: Give it some color
 const educationList = [
   {
@@ -17,24 +16,24 @@ const educationList = [
   },
   {
     side: 'right',
-    title: 'Teaching Assistant',
-    subtitle: 'BYU-I',
-    date: '2021 - Present',
+    title: 'Web Development Certificate',
+    subtitle: 'BYU-I - Rexburg, ID',
+    date: 'Jul 2022',
     id: 2,
   },
   {
     side: 'left',
-    title: 'Software Engineer',
-    subtitle: 'BYU-I - USA',
-    date: '2021 - Present',
-    id: 3,
+    title: 'Web Frontend Certificate',
+    subtitle: 'BYU-I - Rexburg, ID',
+    date: 'Jul 2022',
+    id: 2,
   },
   {
     side: 'right',
-    title: 'Teaching Assistant',
-    subtitle: 'BYU-I',
-    date: '2021 - Present',
-    id: 4,
+    title: 'Web & Computer Programming Certificate',
+    subtitle: 'BYU-I - Rexburg, ID',
+    date: 'Apr 2022',
+    id: 2,
   },
 ];
 
