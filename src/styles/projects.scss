@@ -16,21 +16,23 @@
   &__navItem {
     cursor: pointer;
     color: $title;
-    padding: 0.25rem 0.75rem;
+    padding: 8px 20px;
     font-weight: 500;
     border-radius: 0.5rem;
     text-transform: capitalize;
+    transition: all 0.2s ease;
 
     &:hover {
-      background-color: $title;
+      background-color: $accent;
       color: $container;
     }
   }
 }
 
 .active__project {
-  background-color: $title;
+  background-color: $accent;
   color: $container;
+  transition: all 0.2s ease;
 }
 
 @media screen and (max-width: 992px) {
