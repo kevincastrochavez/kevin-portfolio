@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 0.75rem;
+    column-gap: 20px;
     margin-bottom: $m6;
   }
 
@@ -32,7 +32,6 @@
 .active__project {
   background-color: $accent;
   color: $container;
-  transition: all 0.2s ease;
 }
 
 @media screen and (max-width: 992px) {

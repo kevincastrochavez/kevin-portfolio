@@ -15,8 +15,10 @@
     color: $title;
     margin: 0 16px;
     cursor: pointer;
-    padding: 0.25rem 0.75rem;
+    padding: 8px 20px;
     gap: $m1;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
 
     & svg {
       font-size: 1.8rem;
@@ -24,14 +26,18 @@
     }
 
     &:hover {
-      color: $title-dark;
+      color: $container;
+      background-color: $accent;
+
+      &.experience__button svg {
+        color: $container;
+      }
     }
   }
 
   &__active {
-    background-color: $title;
+    background-color: $accent;
     color: $container;
-    border-radius: 0.5rem;
 
     &.experience__button svg {
       color: $container;
