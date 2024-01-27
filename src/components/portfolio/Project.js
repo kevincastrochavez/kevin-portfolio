@@ -20,6 +20,7 @@ function Project({ item }) {
             <GitHubIcon />
           </a>
         </Tooltip>
+
         <Tooltip title='View Live Site'>
           <a
             className='project__link'
