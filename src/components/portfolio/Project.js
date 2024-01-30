@@ -3,11 +3,31 @@ import React from 'react';
 import { Tooltip } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 function Project({ item }) {
   return (
     <div className='project__card' key={item.id}>
-      <img src={item.images[0]} alt='' className='project__img' />
+      <Swiper
+        className='project__img'
+        effect={'fade'}
+        loop={true}
+        navigation={true}
+        modules={[EffectFade, Navigation]}
+      >
+        <SwiperSlide>
+          <img src={item.images[0]} alt='' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={item.images[1]} alt='' />
+        </SwiperSlide>
+      </Swiper>
       <h3 className='project__title'>{item.title}</h3>
       <div className='project__actions'>
         <Tooltip title='GitHub repository'>
