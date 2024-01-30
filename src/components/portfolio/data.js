@@ -7,9 +7,6 @@ import portalSceneImg from '../../assets/portalScene.png';
 import hauntedHouseImg from '../../assets/hauntedHouse.png';
 import text3dImg from '../../assets/text3d.png';
 
-const imageExample = 'https://dummyimage.com/300';
-// const carstroImg =
-
 export const projects = [
   {
     id: 1,
@@ -30,7 +27,7 @@ export const projects = [
   {
     id: 3,
     image: weddingImg,
-    title: 'Wedding Site',
+    title: 'Own Wedding Site',
     category: 'web',
     githubLink: 'https://github.com/kevincastrochavez/wedding',
     liveSiteLink: 'https://wedding-8b90a.web.app/',
@@ -38,7 +35,7 @@ export const projects = [
   {
     id: 4,
     image: mentImg,
-    title: 'MENT',
+    title: 'MENT Films',
     category: 'web',
     githubLink: 'https://github.com/kevincastrochavez/ment',
     liveSiteLink: 'https://ment-films.web.app/',
@@ -54,7 +51,7 @@ export const projects = [
   {
     id: 6,
     image: portalSceneImg,
-    title: 'Portal Scene',
+    title: '3D Portal Scene',
     category: '3D',
     githubLink: 'https://github.com/kevincastrochavez/threejs-importing-scene',
     liveSiteLink: 'https://webgl-portal-scene-taupe.vercel.app/',
@@ -62,7 +59,7 @@ export const projects = [
   {
     id: 7,
     image: hauntedHouseImg,
-    title: 'Haunted House',
+    title: '3D Haunted House',
     category: '3D',
     githubLink: 'https://github.com/kevincastrochavez/threejs-haunted-house',
     liveSiteLink: 'https://webgl-haunted-house-kevin.vercel.app/',
