@@ -24,6 +24,7 @@ function Project({ item }) {
         {item.images?.map((image) => (
           <SwiperSlide>
             <img src={image} alt={image} key={image} />
+            <div className='project__overlay'></div>
           </SwiperSlide>
         ))}
       </Swiper>
