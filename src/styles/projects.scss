@@ -45,15 +45,7 @@
 @media screen and (max-width: 640px) {
   .projects {
     &__container {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .projects {
-    &__container {
-      grid-template-columns: max-content;
+      grid-template-columns: 1fr;
     }
   }
 }
