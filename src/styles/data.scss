@@ -7,19 +7,8 @@
   &__subtitle {
     position: relative;
     font-size: $h3-font;
-    padding-left: 5.4rem;
     font-weight: 400;
     margin-bottom: 16px;
-  }
-
-  &__subtitle::before {
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 1px;
-    background-color: $text;
-    top: 1rem;
-    left: 0;
   }
 
   &__description {
@@ -40,7 +29,6 @@
 @media screen and (max-width: 992px) {
   .data {
     &__subtitle {
-      padding-left: 3.75rem;
       margin-bottom: 16px;
     }
 
