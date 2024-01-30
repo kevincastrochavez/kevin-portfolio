@@ -1,6 +1,6 @@
 .projects {
   &__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     justify-content: center;
   }
@@ -38,7 +38,6 @@
   .projects {
     &__container {
       gap: 1.25rem;
-      grid-template-columns: repeat(2, max-content);
     }
   }
 }
