@@ -25,14 +25,14 @@ const educationList = [
     title: 'Web Frontend Certificate',
     subtitle: 'BYU-I - Rexburg, ID',
     date: 'Jul 2022',
-    id: 2,
+    id: 3,
   },
   {
     side: 'right',
     title: 'Web & Computer Programming Certificate',
     subtitle: 'BYU-I - Rexburg, ID',
     date: 'Apr 2022',
-    id: 2,
+    id: 4,
   },
 ];
 
