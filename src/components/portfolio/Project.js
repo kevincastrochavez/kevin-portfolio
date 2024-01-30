@@ -21,12 +21,11 @@ function Project({ item }) {
         navigation={true}
         modules={[EffectFade, Navigation]}
       >
-        <SwiperSlide>
-          <img src={item.images[0]} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={item.images[1]} alt='' />
-        </SwiperSlide>
+        {item.images?.map((image) => (
+          <SwiperSlide>
+            <img src={image} alt={image} key={image} />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <h3 className='project__title'>{item.title}</h3>
       <div className='project__actions'>
