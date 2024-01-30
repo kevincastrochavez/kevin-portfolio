@@ -1,16 +1,44 @@
-import carstroImg from '../../assets/carstro.png';
+import carstroOne from '../../assets/carstroOne.png';
+import carstroTwo from '../../assets/carstroTwo.png';
+import carstroThree from '../../assets/carstroThree.png';
+import carstroFour from '../../assets/carstroFour.png';
+import carstroFive from '../../assets/carstroFive.png';
+
+import shuttleTrackerOne from '../../assets/shuttleTrackerOne.png';
+import shuttleTrackerTwo from '../../assets/shuttleTrackerTwo.png';
+import shuttleTrackerThree from '../../assets/shuttleTrackerThree.png';
+
+import weddingOne from '../../assets/weddingOne.png';
+import weddingTwo from '../../assets/weddingTwo.png';
+import weddingThree from '../../assets/weddingThree.png';
+import weddingFour from '../../assets/weddingFour.png';
+import weddingFive from '../../assets/weddingFive.png';
+
+import mentOne from '../../assets/mentOne.png';
+import mentTwo from '../../assets/mentTwo.png';
+import mentThree from '../../assets/mentThree.png';
+import mentFour from '../../assets/mentFour.png';
+import mentFive from '../../assets/mentFive.png';
+
+import portalSceneOne from '../../assets/portalSceneOne.png';
+import portalSceneTwo from '../../assets/portalSceneTwo.png';
+import portalSceneThree from '../../assets/portalSceneThree.png';
+import portalSceneFour from '../../assets/portalSceneFour.png';
+
+import hauntedHouseOne from '../../assets/hauntedHouseOne.png';
+import hauntedHouseTwo from '../../assets/hauntedHouseTwo.png';
+import hauntedHouseThree from '../../assets/hauntedHouseThree.png';
+
+import text3dOne from '../../assets/text3dOne.png';
+import text3dTwo from '../../assets/text3dTwo.png';
+import text3dThree from '../../assets/text3dThree.png';
+
 import covidTrackerImg from '../../assets/covidTracker.png';
-import mentImg from '../../assets/ment.png';
-import shuttleTrackerImg from '../../assets/shuttleTracker.png';
-import weddingImg from '../../assets/wedding.png';
-import portalSceneImg from '../../assets/portalScene.png';
-import hauntedHouseImg from '../../assets/hauntedHouse.png';
-import text3dImg from '../../assets/text3d.png';
 
 export const projects = [
   {
     id: 1,
-    image: carstroImg,
+    images: [carstroOne, carstroTwo, carstroThree, carstroFour, carstroFive],
     title: 'Carstro Cars',
     category: 'web',
     githubLink: 'https://github.com/kevincastrochavez/carstro',
@@ -18,7 +46,7 @@ export const projects = [
   },
   {
     id: 2,
-    image: shuttleTrackerImg,
+    images: [shuttleTrackerOne, shuttleTrackerTwo, shuttleTrackerThree],
     title: 'Shuttle Tracker',
     category: 'web',
     githubLink: 'https://github.com/kevincastrochavez/shuttletracker',
@@ -26,7 +54,7 @@ export const projects = [
   },
   {
     id: 3,
-    image: weddingImg,
+    images: [weddingOne, weddingTwo, weddingThree, weddingFour, weddingFive],
     title: 'Own Wedding Site',
     category: 'web',
     githubLink: 'https://github.com/kevincastrochavez/wedding',
@@ -34,7 +62,7 @@ export const projects = [
   },
   {
     id: 4,
-    image: mentImg,
+    images: [mentOne, mentTwo, mentThree, mentFour, mentFive],
     title: 'MENT Films',
     category: 'web',
     githubLink: 'https://github.com/kevincastrochavez/ment',
@@ -42,7 +70,7 @@ export const projects = [
   },
   {
     id: 5,
-    image: covidTrackerImg,
+    images: [covidTrackerImg],
     title: 'Covid Tracker',
     category: 'web',
     githubLink: 'https://github.com/kevincastrochavez/Covid-19-Tracker',
@@ -50,7 +78,7 @@ export const projects = [
   },
   {
     id: 6,
-    image: portalSceneImg,
+    images: [portalSceneOne, portalSceneTwo, portalSceneThree, portalSceneFour],
     title: '3D Portal Scene',
     category: '3D',
     githubLink: 'https://github.com/kevincastrochavez/threejs-importing-scene',
@@ -58,7 +86,7 @@ export const projects = [
   },
   {
     id: 7,
-    image: hauntedHouseImg,
+    images: [hauntedHouseOne, hauntedHouseTwo, hauntedHouseThree],
     title: '3D Haunted House',
     category: '3D',
     githubLink: 'https://github.com/kevincastrochavez/threejs-haunted-house',
@@ -66,7 +94,7 @@ export const projects = [
   },
   {
     id: 8,
-    image: text3dImg,
+    images: [text3dOne, text3dTwo, text3dThree],
     title: '3D Text',
     category: '3D',
     githubLink: 'https://github.com/kevincastrochavez/threejs-3d-text',

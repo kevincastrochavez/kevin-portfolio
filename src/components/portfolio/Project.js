@@ -7,7 +7,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 function Project({ item }) {
   return (
     <div className='project__card' key={item.id}>
-      <img src={item.image} alt='' className='project__img' />
+      <img src={item.images[0]} alt='' className='project__img' />
       <h3 className='project__title'>{item.title}</h3>
       <div className='project__actions'>
         <Tooltip title='GitHub repository'>
