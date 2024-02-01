@@ -4,7 +4,7 @@ import SouthIcon from '@mui/icons-material/South';
 function ScrollDown() {
   return (
     <div className='scroll'>
-      <a href='#about' className='scroll-button button--flex'>
+      <a href='#portfolio' className='scroll-button button--flex'>
         <svg
           width='32px'
           height='32px'
