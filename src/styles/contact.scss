@@ -26,6 +26,12 @@
     border-radius: 0.75rem;
     text-align: center;
 
+    &:hover {
+      & p svg {
+        transform: translate(0.25rem);
+      }
+    }
+
     & svg {
       font-size: 2rem;
       color: $title;
@@ -60,11 +66,11 @@
       transition: 0.3s;
     }
 
-    &:hover {
-      & svg {
-        transform: translate(0.25rem);
-      }
-    }
+    // &:hover {
+    //   & svg {
+    //     transform: translate(0.25rem);
+    //   }
+    // }
   }
 
   &__form {
