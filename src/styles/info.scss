@@ -1,7 +1,7 @@
 .info {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 
   &__box {
     background-color: $container;

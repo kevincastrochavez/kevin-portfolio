@@ -14,9 +14,9 @@ function About() {
         <img src={AboutImg} alt='Kevin Profile' className='about__img' />
 
         <div className='about__data'>
-          <Info />
-
           <p className='about__description'>Frontend Engineer</p>
+
+          <Info />
 
           <a download='' href={CV} className='button button--flex'>
             {/* TODO: Update and upload resume */}
