@@ -117,7 +117,7 @@ function Contact() {
                 type='text'
                 name='user_name'
                 className='contact__form-input'
-                placeholder='Jonh Doe'
+                placeholder='Your Name'
                 ref={nameRef}
               />
             </div>
@@ -129,7 +129,7 @@ function Contact() {
                 type='email'
                 name='user_email'
                 className='contact__form-input'
-                placeholder='johndoe@gmail.com'
+                placeholder='example@gmail.com'
                 ref={emailRef}
               />
             </div>

@@ -32,7 +32,7 @@ function Header() {
       }`}
     >
       <nav className='header__nav container'>
-        <a href='index.html' className='header__nav-logo'>
+        <a href='#' className='header__nav-logo'>
           Castro
         </a>
 
