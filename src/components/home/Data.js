@@ -5,7 +5,7 @@ function Data() {
     <div className='data'>
       <h1 className='data__title'>Kevin Castro</h1>
 
-      <h3 className='data__subtitle'>Front-End Engineer</h3>
+      <h3 className='data__subtitle'>Your Next Front-End Engineer</h3>
 
       <p className='data__description'>
         Solving problems through responsive web applications
