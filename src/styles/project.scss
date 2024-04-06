@@ -3,7 +3,12 @@
     background-color: $container;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1.25rem;
+    padding-bottom: 0.6125rem;
     border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
   }
 
   &__img {
@@ -12,33 +17,31 @@
     margin-bottom: $m1;
     margin-left: 0 !important;
     margin-right: 0 !important;
-  }
 
-  // &__overlay {
-  //   position: absolute;
-  //   top: 0;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  //   background-color: rgba(0, 0, 0, 0.1);
-  // }
+    grid-column: 1/-1;
+  }
 
   &__title {
     font-size: $normal-font;
     font-weight: 500;
+    align-self: center;
   }
 
   &__actions {
-    margin-top: $m1;
     display: flex;
     justify-content: end;
-    gap: 32px;
+    gap: 12px;
+
+    & svg {
+      width: 44px;
+      font-size: 28px;
+    }
   }
 
   &__link {
     & svg {
       width: 44px;
-      font-size: 32px;
+      font-size: 28px;
 
       &:hover {
         color: $accent;
@@ -55,11 +58,9 @@
   }
 }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
+.swiper-pagination-bullet {
   font-size: 32px;
-  color: $accent;
-  z-index: 10;
+  background-color: $accent;
 }
 
 .swiper-slide-visible {
@@ -69,17 +70,12 @@
 @media screen and (max-width: 992px) {
   .project {
     &__card {
-      padding: 1rem;
+      padding: 1rem 1rem 0.5rem 1rem;
       width: fit-content;
     }
 
     &__img {
-      margin-bottom: 0.75rem;
       max-width: 380px;
-    }
-
-    &__title {
-      margin-bottom: 0.25rem;
     }
   }
 }
