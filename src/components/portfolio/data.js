@@ -1,3 +1,9 @@
+import systemDesignOne from '../../assets/systemDesignOne.png';
+import systemDesignTwo from '../../assets/systemDesignTwo.png';
+import systemDesignThree from '../../assets/systemDesignThree.png';
+import systemDesignFour from '../../assets/systemDesignFour.png';
+import systemDesignFive from '../../assets/systemDesignFive.png';
+
 import happyBOne from '../../assets/happyBOne.png';
 import happyBTwo from '../../assets/happyBTwo.png';
 import happyBThree from '../../assets/happyBThree.png';
@@ -55,6 +61,22 @@ import covidTrackerImg from '../../assets/covidTracker.png';
 export const projects = [
   {
     id: 1,
+    images: [
+      systemDesignOne,
+      systemDesignTwo,
+      systemDesignThree,
+      systemDesignFour,
+      systemDesignFive,
+    ],
+    title: 'Personal System Design',
+    category: 'web',
+    githubLink: 'https://github.com/kevincastrochavez/systemdesign',
+    liveSiteLink:
+      'https://6642d6b393abc7bb42adf7f9-rhhegtnmzf.chromatic.com/?path=/docs/components-reviewsectiongroup-reviewsection--docs',
+    isOwnApp: true,
+  },
+  {
+    id: 2,
     images: [happyBOne, happyBTwo, happyBThree, happyBFour, happyBFive],
     title: 'Happy B!',
     category: 'web',
@@ -64,6 +86,15 @@ export const projects = [
   },
   {
     id: 2,
+    images: [happyBOne, happyBTwo, happyBThree, happyBFour, happyBFive],
+    title: 'Happy B!',
+    category: 'web',
+    githubLink: 'https://github.com/kevincastrochavez/react-upcoming-birthdays',
+    liveSiteLink: 'https://happyb-five.vercel.app/',
+    isOwnApp: true,
+  },
+  {
+    id: 3,
     images: [
       familySearchOne,
       familySearchTwo,
@@ -78,7 +109,7 @@ export const projects = [
       'As an intern, I worked on the search-related pages, dealing with complex logic and performance',
   },
   {
-    id: 3,
+    id: 4,
     images: [carstroOne, carstroTwo, carstroThree, carstroFour, carstroFive],
     title: 'Carstro Cars',
     category: 'web',
@@ -87,7 +118,7 @@ export const projects = [
     isOwnApp: true,
   },
   {
-    id: 4,
+    id: 5,
     images: [shuttleTrackerOne, shuttleTrackerTwo, shuttleTrackerThree],
     title: 'Shuttle Tracker',
     category: 'web',
@@ -96,7 +127,7 @@ export const projects = [
     isOwnApp: true,
   },
   {
-    id: 5,
+    id: 6,
     images: [weddingOne, weddingTwo, weddingThree, weddingFour, weddingFive],
     title: 'Own Wedding Site',
     category: 'web',
@@ -105,7 +136,7 @@ export const projects = [
     isOwnApp: true,
   },
   {
-    id: 6,
+    id: 7,
     images: [todoOne, todoTwo, todoThree, todoFour, todoFive],
     title: 'Todo App',
     category: 'web',
@@ -114,7 +145,7 @@ export const projects = [
     isOwnApp: true,
   },
   {
-    id: 7,
+    id: 8,
     images: [mentOne, mentTwo, mentThree, mentFour, mentFive],
     title: 'MENT Films',
     category: 'web',
@@ -123,7 +154,7 @@ export const projects = [
     isOwnApp: true,
   },
   {
-    id: 8,
+    id: 9,
     images: [covidTrackerImg],
     title: 'Covid Tracker',
     category: 'web',
@@ -132,7 +163,7 @@ export const projects = [
     isOwnApp: true,
   },
   {
-    id: 9,
+    id: 10,
     images: [portalSceneOne, portalSceneTwo, portalSceneThree, portalSceneFour],
     title: '3D Portal Scene',
     category: '3D',
@@ -141,7 +172,7 @@ export const projects = [
     isOwnApp: true,
   },
   {
-    id: 10,
+    id: 11,
     images: [hauntedHouseOne, hauntedHouseTwo, hauntedHouseThree],
     title: '3D Haunted House',
     category: '3D',
@@ -150,7 +181,7 @@ export const projects = [
     isOwnApp: true,
   },
   {
-    id: 11,
+    id: 12,
     images: [text3dOne, text3dTwo, text3dThree],
     title: '3D Text',
     category: '3D',
